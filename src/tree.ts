@@ -109,7 +109,7 @@ export function eachTree<T extends Record<string, any>>(
   callback?: (item: T, index: number, parent?: T) => void | boolean,
   childrenField: keyof T | string = "children",
   parent?: T
-) {
+): Boolean | void {
   if (!data) {
     return;
   }

@@ -1,10 +1,8 @@
-import { defineBuildConfig } from 'unbuild'
+import { defineBuildConfig } from "unbuild";
 
 export default defineBuildConfig({
-  entries: [
-    'src/index',
-  ],
-  declaration: 'node16',
+  entries: ["src/index"],
+  declaration: "node16",
   clean: true,
   externals: [],
   rollup: {
@@ -13,4 +11,4 @@ export default defineBuildConfig({
       respectExternal: true,
     },
   },
-})
+});
